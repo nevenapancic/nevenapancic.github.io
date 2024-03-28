@@ -12,7 +12,7 @@ type ProjectProps = {
   title: string;
   description: string;
   tags: readonly string[];
-  imageUrls: string[];
+  imageUrls: readonly string[];
 }
 
 export default function Project({
