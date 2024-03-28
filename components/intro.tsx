@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/neve.jpg"
+              src="/neve_cropped.jpg"
               alt="Nevena portrait"
               width="192"
               height="192"
@@ -52,7 +52,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋
+            🦭
           </motion.span>
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Nevena.</span> I'm a{" "}
         <span className="font-bold">junior full-stack developer</span>. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js) and Ruby on Rails</span>.
+        React (Next.js) and Ruby on Rails.
       </motion.h1>
 
       <motion.div

@@ -2,8 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import wvImg from "@/public/wisevouyage.jpeg";
-import thriftImg from "@/public/thriftique.jpeg";
 
 export const links = [
   {
@@ -57,20 +55,12 @@ export const experiencesData = [
 
 export const educationData = [
   {
-    title: "BSc Biology",
-    location: "University of Belgrade",
+    title: "Le Wagon coding bootcamp",
+    location: "Amsterdam, Netherlands",
     description:
-    "With specialization in Ecology and protection of the environment",
+      "9 week full-time intensive coding bootcamp where I learned how to code from scratch using HTML, CSS, Bootstrap, Javascript, Vue.js, React, Figma, SQL, Git, GitHub,Heroku, Ruby on Rails. Participated in two projects: Thriftique, a clone of AirBnb for selling second-hand clothes and Wise Voyage, a travel app impowered by AI APIs.",
     icon: React.createElement(LuGraduationCap),
-    date: "10/2016 - 07/2020",
-  },
-  {
-    title: "MSc Environmental Policy",
-    location: "University of Belgrade",
-    description:
-    "Thesis: Impact of mass fast fashion consumption on the environment",
-    icon: React.createElement(LuGraduationCap),
-    date: "10/2020 - 07/2021",
+    date: "01/2024 - 03/2024",
   },
   {
     title: "MSc Environment and Resource Management",
@@ -81,28 +71,36 @@ export const educationData = [
     date: "09/2021 - 07/2022",
   },
   {
-    title: "Le Wagon coding bootcamp",
-    location: "Amsterdam, Netherlands",
+    title: "MSc Environmental Policy",
+    location: "University of Belgrade",
     description:
-      "9 week full-time intensive coding bootcamp where I learned how to code from scratch using HTML, CSS, Bootstrap, Javascript, Vue.js, React, Figma, SQL, Git, GitHub,Heroku, Ruby on Rails. Participated in two projects: Thriftique, a clone of AirBnb for selling second-hand clothes and Wise Voyage, a travel app impowered by AI APIs.",
+    "Thesis: Impact of mass fast fashion consumption on the environment",
     icon: React.createElement(LuGraduationCap),
-    date: "01/2024 - 03/2024",
+    date: "10/2020 - 07/2021",
+  },
+  {
+    title: "BSc Biology",
+    location: "University of Belgrade",
+    description:
+    "With specialization in Ecology and protection of the environment",
+    icon: React.createElement(LuGraduationCap),
+    date: "10/2016 - 07/2020",
   },
 ] as const;
 
 export const projectsData = [
   {
+    title: "Wise Voyage",
+    description: "Led a 4-person team to develop a robust web app for trip planning, integrating advanced AI APIs. Using Ruby on Rails and JavaScript, focusing on seamless integration with accommodation booking services for enhanced user experience.",
+    tags: ["Ruby on Rails", "HTML", "CSS", "Javascript", "Heroku", "SQL", "GitHub", "Bootstrap"],
+    imageUrls: ['/wisevouyage.jpeg','/wv1.jpeg', '/wv2.jpeg', '/wv3.jpeg', '/wv4.jpeg', '/wv5.jpeg', '/wv7.jpeg'],
+  },
+  {
     title: "Thriftique",
     description:
       "In a team of 4, crafted a pioneering marketplace merging sustainability with web development, specializing in second-hand clothing sales. Utilized Ruby on Rails, JavaScript, and more to innovate eco-conscious shopping in fashion.",
-    tags: ["Ruby on Rails", "HTML", "CSS", "Javascript", "Heroku", "Figma", "SQL", "Git", "GitHub", "Bootstrap"],
-    imageUrl: thriftImg,
-  },
-  {
-    title: "Wise Voyage",
-    description: "Led a 4-person team to develop a robust web app for trip planning, integrating advanced AI APIs. Using Ruby on Rails and JavaScript, focusing on seamless integration with accommodation booking services for enhanced user experience.",
-    tags: ["Ruby on Rails", "HTML", "CSS", "Javascript", "Heroku", "Figma", "SQL", "Git", "GitHub", "Bootstrap"],
-    imageUrl: wvImg,
+    tags: ["Ruby on Rails", "HTML", "CSS", "Javascript", "Heroku", "Figma", "GitHub", "Bootstrap"],
+    imageUrls: ['/th2.jpeg', '/thriftique.jpeg'],
   },
 ] as const;
 

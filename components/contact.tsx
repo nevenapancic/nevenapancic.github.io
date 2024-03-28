@@ -32,13 +32,10 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          nevenapancic97@gmail.com
-        </a>{" "}
-        or through this form.
+        Please contact me on <a href="https://www.linkedin.com/in/pancic/" target="_blank" rel="noopener noreferrer"><u>LinkedIn</u></a>
+        /
+        <a href="https://github.com/nevenapancic/" target="_blank" rel="noopener noreferrer"><u>GitHub</u></a> or through this form.
       </p>
-
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
