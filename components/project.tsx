@@ -5,7 +5,15 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+
+
+// type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrls: string[];
+}
 
 export default function Project({
   title,
@@ -23,6 +31,7 @@ export default function Project({
 
   const [currentImage, setCurrentImage] = useState(imageUrls[0]);
 
+  // Function to change the image
   const changeImage = () => {
     if (imageUrls.length === 0) return; // If there are no other images, do nothing
     const currentIndex = imageUrls.indexOf(currentImage);
