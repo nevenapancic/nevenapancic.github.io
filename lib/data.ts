@@ -2,9 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import wvImg from "@/public/wisevouyage.jpeg";
+import thriftImg from "@/public/thriftique.jpeg";
 
 export const links = [
   {
@@ -20,12 +19,16 @@ export const links = [
     hash: "#projects",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -35,73 +38,93 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Teaching assistant at Le Wagon bootcamp",
+    location: "Amsterdam, Netherlands",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    "As a Teaching Assistant at Le Wagon's coding bootcamp, responsibilities include assisting instructors during lectures, conducting code reviews, providing one-on-one guidance to students, facilitating group projects, and assisting with technical troubleshooting (mostly in HTML, CSS, JavaScript, and Ruby/Ruby on Rails).",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "03/2024 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Junior software developer",
+    location: "Amsterdam, Netherlands",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Freelancer utilizing React, Next Js, and JavaScript, crafting seamless solutions, collaborating closely with the team on implementation, code cleanliness ensuring effective client-centric project delivery.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "03/2024 - present",
+  },
+] as const;
+
+export const educationData = [
+  {
+    title: "BSc Biology",
+    location: "University of Belgrade",
+    description:
+    "With specialization in Ecology and protection of the environment",
+    icon: React.createElement(LuGraduationCap),
+    date: "10/2016 - 07/2020",
+  },
+  {
+    title: "MSc Environmental Policy",
+    location: "University of Belgrade",
+    description:
+    "Thesis: Impact of mass fast fashion consumption on the environment",
+    icon: React.createElement(LuGraduationCap),
+    date: "10/2020 - 07/2021",
+  },
+  {
+    title: "MSc Environment and Resource Management",
+    location: "Vrije University Amsterdam",
+    description:
+    "Thesis: Drivers and patterns of agricultural change and their socio-environmental impact in Loznica, Serbia",
+    icon: React.createElement(LuGraduationCap),
+    date: "09/2021 - 07/2022",
+  },
+  {
+    title: "Le Wagon coding bootcamp",
+    location: "Amsterdam, Netherlands",
+    description:
+      "9 week full-time intensive coding bootcamp where I learned how to code from scratch using HTML, CSS, Bootstrap, Javascript, Vue.js, React, Figma, SQL, Git, GitHub,Heroku, Ruby on Rails. Participated in two projects: Thriftique, a clone of AirBnb for selling second-hand clothes and Wise Voyage, a travel app impowered by AI APIs.",
+    icon: React.createElement(LuGraduationCap),
+    date: "01/2024 - 03/2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Thriftique",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "In a team of 4, crafted a pioneering marketplace merging sustainability with web development, specializing in second-hand clothing sales. Utilized Ruby on Rails, JavaScript, and more to innovate eco-conscious shopping in fashion.",
+    tags: ["Ruby on Rails", "HTML", "CSS", "Javascript", "Heroku", "Figma", "SQL", "Git", "GitHub", "Bootstrap"],
+    imageUrl: thriftImg,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "Wise Voyage",
+    description: "Led a 4-person team to develop a robust web app for trip planning, integrating advanced AI APIs. Using Ruby on Rails and JavaScript, focusing on seamless integration with accommodation booking services for enhanced user experience.",
+    tags: ["Ruby on Rails", "HTML", "CSS", "Javascript", "Heroku", "Figma", "SQL", "Git", "GitHub", "Bootstrap"],
+    imageUrl: wvImg,
   },
 ] as const;
 
 export const skillsData = [
+  "Ruby on Rails",
+  "Ruby",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
+  "Tailwind CSS",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "GitHub",
+  "SQL",
   "PostgreSQL",
   "Python",
-  "Django",
+  "Figma",
+  "Bootstrap",
   "Framer Motion",
+  "Heroku",
+  "Postman",
+  "SASS",
 ] as const;
