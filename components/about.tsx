@@ -6,9 +6,13 @@ import React from 'react';
 import SectionHeading from './sectionHeading';
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
+import { useLanguage } from '@/context/languageContext';
+import { translations } from '@/lib/translations';
 
 export default function About() {
   const { ref } = useSectionInView('About');
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <motion.section
@@ -19,45 +23,24 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id='about'
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className='mb-3'>
-        After completing a bachelor's degree in{' '}
-        <span className='font-medium'>Biology</span> and two master's
-        degrees—one in <span className='font-medium'>Environmental Policy</span>{' '}
-        and another in{' '}
-        <span className='font-medium'>Environment and Resource Management</span>
-        —I decided to pursue my passion for programming. I enrolled in the{' '}
-        <span className='font-medium'>Le Wagon</span> coding bootcamp, where I
-        learned <span className='font-medium'>full-stack web development</span>.
-      </p>
+      <SectionHeading>{t.about.title}</SectionHeading>
+      <p className='mb-3'>{t.about.paragraph1}</p>
 
-      <p className='mb-3'>
-        What I enjoy most about programming is the problem-solving aspect; I{' '}
-        <span className='italic'>
-          love the moment when everything finally clicks
-        </span>{' '}
-        and a solution comes together. My core stack includes{' '}
-        <span className='font-medium'>
-          React, Next.js, TypeScript, and Ruby on Rails
-        </span>
-        . I'm always eager to explore new technologies and continuously expand
-        my skill set.
-      </p>
+      <p className='mb-3'>{t.about.paragraph2}</p>
 
       <p>
-        <span className='italic'>When I'm not coding</span>, I enjoy running
-        halfmarathones (I am a proud owner of 25+ medals) and sweing clothes. In
-        fact I had my own fashion brand Kalas{' '}
+        {language === 'en'
+          ? "When I'm not coding, I enjoy running halfmarathones (I am a proud owner of 25+ medals) and sweing clothes. In fact I had my own fashion brand Kalas "
+          : 'Kada ne kuckam kod, trčim polumaratone (ponosna sam vlasnica preko 25 medalja) i šijem odeću. Zapravo, imala sam i svoj modni brend Kalas '}
         <a
           href='https://www.instagram.com/__kalas___/?hl=en'
           target='_blank'
           rel='noopener noreferrer'
+          className='underline hover:text-gray-600 dark:hover:text-gray-300 transition'
         >
-          <span className='underline'>(check it out)</span>.
-        </a>{' '}
-        I also enjoy <span className='font-medium'>learning new things</span>. I
-        am currently learning more about{' '}
-        <span className='font-medium'>Project management</span>.
+          {language === 'en' ? '(check it out)' : '(pogledajte ovde)'}
+        </a>
+        .
       </p>
     </motion.section>
   );

@@ -11,10 +11,14 @@ import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/activeSectionContext';
+import { useLanguage } from '@/context/languageContext';
+import { translations } from '@/lib/translations';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <section
@@ -64,15 +68,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className='font-bold'>Hi, I'm Nevena</span> — a{' '}
-        <span className='font-bold'>full-stack developer</span> specializing in{' '}
-        <span className='italic'>scalable web applications</span>. I work with{' '}
-        <span className='font-bold'>
-          Next.js, React, TypeScript, and cloud technologies
-        </span>
-        , building enterprise-level solutions with microservices architecture,
-        real-time data streaming, and seamless user experiences. Oh yeah, I'm
-        also a <span className='font-bold'>Ruby on Rails educator</span>.
+        <span className='font-bold'>{t.intro.greeting}</span> — a{' '}
+        <span className='font-bold'>{t.intro.role}</span> specializing in{' '}
+        <span className='italic'>{t.intro.specialization}</span>. I work with{' '}
+        <span className='font-bold'>{t.intro.technologies}</span>,{' '}
+        {t.intro.description}{' '}
+        <span className='font-bold'>{t.intro.educator}</span>.
       </motion.h1>
 
       <motion.div
@@ -91,7 +92,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{' '}
+          {t.intro.contactMe}{' '}
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 
@@ -100,10 +101,9 @@ export default function Intro() {
           href='/Nevena_Pancic_CV.pdf'
           download
         >
-          Download CV{' '}
+          {t.intro.downloadCV}{' '}
           <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
         </a>
-
         <a
           className='bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://www.linkedin.com/in/nevena-pancic-3312b5204/'
