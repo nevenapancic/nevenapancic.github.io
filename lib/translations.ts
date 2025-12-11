@@ -338,8 +338,8 @@ export const translations = {
     },
     // Contact section
     contact: {
-      title: 'Kontaktirajte me',
-      intro: 'Molim kontaktirajte me na',
+      title: 'Kontaktiraj me',
+      intro: 'Molim kontaktiraj me na',
       or: 'ili preko ovog formulara.',
       emailPlaceholder: 'Vaš email',
       messagePlaceholder: 'Vaša poruka',
