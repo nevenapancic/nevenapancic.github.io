@@ -24,7 +24,7 @@ export const translations = {
       contactMe: 'Contact me here',
       downloadCV: 'Download CV',
       fullIntro:
-        "Hi, I'm Nevena — a full-stack developer specializing in scalable web applications. I work with Next.js, React, TypeScript, and cloud technologies, building enterprise-level solutions with microservices architecture, real-time data streaming, and seamless user experiences. Oh yeah, I'm also a Ruby on Rails educator.",
+        "Hi, I'm Nevena — a full-stack developer specializing in scalable web applications. I work with Next.js, React, TypeScript, and cloud technologies, building enterprise-level solutions with microservices architecture, real-time data streaming, and seamless user experiences. Oh yeah, I'm also a Full-stack / AI educator.",
     },
     // About section
     about: {
@@ -206,7 +206,7 @@ export const translations = {
       contactMe: 'Kontaktiraj me',
       downloadCV: 'Preuzmi CV',
       fullIntro:
-        'Zdravo, ja sam Nevena -- full-stack programer koja se specijalizuje za skalabilne web sisteme. Radim sa Next.js, React, TypeScript i cloud tehnologijama, kreiram složena poslovna rešenja koja se oslanjaju na mikroservise, obradu podataka u realnom vremenu i besprekoran korisnički doživljaj. Pored toga, bavim se i edukacijom za Ruby on Rails.',
+        'Zdravo, ja sam Nevena -- full-stack programer koja se specijalizuje za skalabilne web sisteme. Radim sa Next.js, React, TypeScript i cloud tehnologijama, kreiram složena poslovna rešenja koja se oslanjaju na mikroservise, obradu podataka u realnom vremenu i besprekoran korisnički doživljaj. Pored toga, bavim se i edukacijom za Full-stack i AI.',
     },
     // About section
     about: {
