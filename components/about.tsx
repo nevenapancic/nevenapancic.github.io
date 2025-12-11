@@ -19,18 +19,22 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a bachelor degree in{" "}
-        <span className="font-medium">Biology</span>, one master in <span className="font-medium">Environmental Policy</span> and second in <span className="font-medium">Environment and Resource Management</span> I decided to pursue my
-        passion for programming. I enrolled in the <span className="font-medium">Le Wagon</span> coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I love the feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        After completing a bachelor's degree in{" "}
+        <span className="font-medium">Biology</span> and two master's degrees—one in{" "}
+        <span className="font-medium">Environmental Policy</span> and another in{" "}
+        <span className="font-medium">Environment and Resource Management</span>—I decided to pursue my
+        passion for programming. I enrolled in the{" "}
+        <span className="font-medium">Le Wagon</span> coding bootcamp, where I learned{" "}
+        <span className="font-medium">full-stack web development</span>.
+      </p>
+
+      <p className="mb-3">
+        What I enjoy most about programming is the problem-solving aspect; I{" "}
+        <span className="italic">love the moment when everything finally clicks</span> and a solution comes together. My core stack includes{" "}
         <span className="font-medium">
-          React, Next.js, and Ruby on Rails
+          React, Next.js, TypeScript, and Ruby on Rails
         </span>
-        . I am also familiar with TypeScript. I am always looking to
-        learn new technologies.
+        . I'm always eager to explore new technologies and continuously expand my skill set.
       </p>
 
       <p>

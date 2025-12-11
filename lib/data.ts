@@ -198,24 +198,60 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'Ruby on Rails',
-  'Ruby',
+  // Frontend Technologies
+  'React',
+  'TypeScript',
+  'Redux & Redux Toolkit',
+  'Tailwind CSS',
+  'Recharts',
+  'Next.js',
+
+  // Backend & Cloud
+  'Firebase (Functions, Firestore, Auth, Hosting)',
+  'Supabase (PostgreSQL, GoTrue)',
+  'Google Cloud Platform (GCP)',
+  'Cloud Functions',
+  'Node.js',
+
+  // Databases
+  'PostgreSQL',
+  'Firestore',
+  'Firebase Realtime Database',
+  'SQL',
+
+  // CI/CD & DevOps
+  'CircleCI',
+  'Docker',
+  'Firebase Tools',
+
+  // Testing & Quality
+  'Jest',
+
+  // API & Integrations
+  'Axios',
+
+  // Languages & Scripting
+  'JavaScript',
   'HTML',
   'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Tailwind CSS',
-  'Git',
-  'GitHub',
-  'SQL',
-  'PostgreSQL',
-  'Python',
-  'Figma',
-  'Bootstrap',
-  'Framer Motion',
-  'Heroku',
-  'Postman',
   'SASS',
+  'Ruby on Rails',
+  'Ruby',
+  'Python',
+
+  // Design & UX
+  'Figma',
+
+  // Development Patterns
+  'Microservices',
+  'Real-time Applications',
+
+  // Version Control & Collaboration
+  'GitHub',
+
+  // Additional Tools
+  'Postman',
+  'Heroku',
+  'Vercel',
+  'Sentry',
 ] as const;
