@@ -1,30 +1,32 @@
 /** @format */
 
-'use client';
+// /** @format */
 
-import React from 'react';
-import SectionHeading from './sectionHeading';
-import { projectsData } from '@/lib/data';
-import Project from './project';
-import { useSectionInView } from '@/lib/hooks';
-import { useLanguage } from '@/context/languageContext';
-import { translations } from '@/lib/translations';
+// 'use client';
 
-export default function Projects() {
-  const { ref } = useSectionInView('Projects', 0.5);
-  const { language } = useLanguage();
-  const t = translations[language];
+// import React from 'react';
+// import SectionHeading from './sectionHeading';
+// import { projectsData } from '@/lib/data';
+// import Project from './project';
+// import { useSectionInView } from '@/lib/hooks';
+// import { useLanguage } from '@/context/languageContext';
+// import { translations } from '@/lib/translations';
 
-  return (
-    <section ref={ref} id='projects' className='scroll-mt-28 mb-28'>
-      <SectionHeading>{t.projects.title}</SectionHeading>
-      <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} projectIndex={index} />
-          </React.Fragment>
-        ))}
-      </div>
-    </section>
-  );
-}
+// export default function Projects() {
+//   const { ref } = useSectionInView('Projects', 0.5);
+//   const { language } = useLanguage();
+//   const t = translations[language];
+
+//   return (
+//     <section ref={ref} id='projects' className='scroll-mt-28 mb-28'>
+//       <SectionHeading>{t.projects.title}</SectionHeading>
+//       <div>
+//         {projectsData.map((project, index) => (
+//           <React.Fragment key={index}>
+//             <Project {...project} projectIndex={index} />
+//           </React.Fragment>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }
