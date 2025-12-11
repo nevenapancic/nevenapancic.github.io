@@ -68,12 +68,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className='font-bold'>{t.intro.greeting}</span> — a{' '}
-        <span className='font-bold'>{t.intro.role}</span> specializing in{' '}
-        <span className='italic'>{t.intro.specialization}</span>. I work with{' '}
-        <span className='font-bold'>{t.intro.technologies}</span>,{' '}
-        {t.intro.description}{' '}
-        <span className='font-bold'>{t.intro.educator}</span>.
+        {t.intro.fullIntro}
       </motion.h1>
 
       <motion.div
